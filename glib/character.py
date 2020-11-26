@@ -32,7 +32,7 @@ class Character:
             self.y += self.grav
             if self.grav < 10:
                 self.grav += 1
-        elif way[pygame.K_UP] or way[pygame.K_SPACE]:
+        elif way[pygame.K_UP] or way[pygame.K_SPACE] or way[pygame.K_w]:
             self.grav = -1 * self.jump_power
             self.y += self.grav
         else:
